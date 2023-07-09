@@ -49,3 +49,7 @@ async function checkWeather(city) {
 searchBtn.addEventListener("click", () => {
   checkWeather(searchBox.value); //it will give the value of city name written in the input field
 });
+
+searchBtn.addEventListener("keyup", () => {
+  checkWeather(searchBox.value);
+});
