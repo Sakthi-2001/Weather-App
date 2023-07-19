@@ -1,5 +1,5 @@
 # Weather-App
-Created Using HTML, CSS and JavaScript
+Created Using HTML, CSS, JavaScript and Open Weather API
 
 Live Link: https://rajeevkrs.github.io/Weather-App/
 
