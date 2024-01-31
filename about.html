@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #2c3e50;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .content {
+        text-align: center;
+        color: #fff;
+      }
+
+      .app-info {
+        max-width: 600px;
+        margin: 20px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-size: 24px;
+        line-height: 1.5;
+        text-shadow: 0 0 20px rgba(0, 173, 239, 0.8); /* Neon blue color for glowing effect */
+      }
+
+      .navbar {
+        background-color: #34495e;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+      }
+
+      .nav-link {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 16px;
+      }
+
+      .clock {
+        color: white;
+        font-size: 24px; /* Increased font size */
+        margin-top: 10px;
+      }
+
+      .footer {
+        background-color: #34495e;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="home.html" class="nav-link">Home</a>
+      <a href="index.html" class="nav-link">Weather App</a>
+      <a href="about.html" class="nav-link">About</a>
+    </div>
+
+    <div class="content">
+      <div class="app-info">
+        <p>
+          Explore the latest weather conditions using our Weather App powered by
+          the OpenWeather API. Get real-time updates on temperature, humidity,
+          wind speed, and more for any location worldwide.
+        </p>
+      </div>
+    </div>
+
+    <div class="clock" id="clock">clock</div>
+
+    <footer class="footer">
+      <p>Made with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
