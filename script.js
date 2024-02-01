@@ -47,7 +47,7 @@ async function checkWeather(city) {
   }
 }
 // Step 1: Include the audio file
-const audioFile = 'sounds/sound1.mp3';
+const audioFile = 'sounds/sound1.wav';
 
 // Step 2: Create an audio object
 const audio = new Audio(audioFile);
