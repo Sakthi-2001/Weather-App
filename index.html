@@ -1,67 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style2.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="navbar">
-      <a href="home.html" class="nav-link">Home</a>
-      <a href="index.html" class="nav-link">Weather App</a>
-      <a href="about.html" class="nav-link">About</a>
-    </div>
-    <div class="eyes">
-      <div class="eye">
-        <div class="pupil"></div>
-      </div>
-      <div class="eye">
-        <div class="pupil"></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="search">
-        <input
-          type="text"
-          placeholder="Enter the city name"
-          spellcheck="false"
-        />
-        <button><img src="images/search.png" /></button>
-      </div>
-
-      <div class="error">
-        <p>Invalid Name</p>
-      </div>
-
-      <div class="weather">
-        <img src="images/rain.png" class="weather-icon" />
-        <h1 class="temp">22°C</h1>
-        <h2 class="city">Bihar</h2>
-
-        <div class="details">
-          <div class="col">
-            <img src="images/humidity.png" />
-            <div>
-              <p class="humidity">50%</p>
-              <p>Humidity</p>
-            </div>
-          </div>
-
-          <div class="col">
-            <img src="images/wind.png" />
-            <div>
-              <p class="wind">15 km/h</p>
-              <p>Wind Speed</p>
-            </div>
-          </div>
+    <div class="maincontainer">
+      <div class="monkeylogin">
+        <div class="animcon" id="animcon">
+          <img id="hands" src="images/hands.png" />
+        </div>
+        <div class="formcon">
+          <form id="loginForm">
+            <input
+              type="Name"
+              id="mail"
+              name=""
+              onclick="openeye();"
+              class="tb"
+              placeholder="Name"
+              autocomplete="off"
+            />
+            <br />
+            <br />
+            <input
+              type="password"
+              id="pwdbar"
+              onclick="closeye();"
+              name="pwd"
+              class="tb"
+              placeholder="Security key"
+            />
+            <br />
+            <p class="hint">Hint: What is the name of Alexander's horse?</p>
+            <br />
+            <input type="submit" name="" class="sbutton" value="L O G I N" />
+          </form>
         </div>
       </div>
     </div>
-    <div class="clock" id="clock">clock</div>
-    <footer class="footer">
-      <p>Made with ❤️</p>
-    </footer>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script2.js"></script>
   </body>
 </html>
